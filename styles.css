@@ -17,9 +17,12 @@ html {
     box-sizing: inherit;
 }
 
+* {
+    margin: 0;
+}
+
 body {
     display: flex;
-    margin: 0;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.5;
 }
@@ -29,9 +32,9 @@ body {
     background-image: url("./images/basketball.jpg");
     background-size: cover;
     background-position: center;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     align-items: center;
     justify-content: space-between;
     padding: 6rem 0 2rem 0;
@@ -54,10 +57,42 @@ body {
     height: min(75px, 175%);
 }
 
+.logo-footer {
+    text-align: center;
+}
+
 .form-side {
     flex: 65%;
     background: rgb(243, 243, 243);
     height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+.info-section,
+.form-side > p,
+form {
+    padding-left: 2rem;
+}
+
+.info-section p,
+form > p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.info-section p {
+    width: 55ch;
+    padding: 4rem 0 2rem 0;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
 }
