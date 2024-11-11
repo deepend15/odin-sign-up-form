@@ -20,6 +20,8 @@ html {
 body {
     display: flex;
     margin: 0;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
 }
 
 .logo-side {
@@ -31,6 +33,25 @@ body {
     flex-direction: column;
     height: 100vh;
     align-items: center;
+    justify-content: space-between;
+    padding: 6rem 0 2rem 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    padding: 1.5rem 0;
+    background-color: rgb(0, 0, 0, 55%);
+    width: 100%;
+    font-size: 2rem;
+    font-family: 'anudawregular', sans-serif;
+    color: white;
+}
+
+.logo-holder {
+    height: min(75px, 175%);
 }
 
 .form-side {
