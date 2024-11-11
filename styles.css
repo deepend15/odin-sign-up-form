@@ -16,3 +16,27 @@ html {
 *::after {
     box-sizing: inherit;
 }
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+.logo-side {
+    flex: 35%;
+    background-image: url("./images/basketball.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+
+.form-side {
+    flex: 65%;
+    background: rgb(243, 243, 243);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
