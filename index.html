@@ -12,49 +12,71 @@
             <img class="logo-holder" src="./images/basketball-icon.svg" alt="A basketball icon">
             <span>BALL IS LIFE</span>
         </div>
-        <div class="logo-footer">Photo by <a href="https://www.pexels.com/@tima-miroshnichenko/">Tima Miroshnichenko</a> on <a href="https://www.pexels.com/">Pexels</a></div>
+        <div class="logo-footer">
+            Photo by <a href="https://www.pexels.com/@tima-miroshnichenko/">Tima Miroshnichenko</a> 
+            on <a href="https://www.pexels.com/">Pexels</a>
+        </div>
     </div>
     <div class="form-side">
         <div class="info-section">
-            <p>Do you daydream of ball all day long? Are your pesky "personal relationships" getting in the way of what really matters in life (crossing fools up and <em>swishing that thang</em>)? If so, sign up now for this completely clear, not-vague-at-all online service, and join millions of other like-minded people who have similarly ascertained the one true mantra of our existence:<br><br><strong>Ball is life.</strong></p>
+            <p>
+                Do you daydream of ball all day long? Are your pesky "personal relationships" 
+                getting in the way of what really matters in life (crossing fools up and 
+                <em>swishing that thang</em>)? If so, sign up now for this completely clear, 
+                not-vague-at-all online service, and join thousands of other like-minded people 
+                who have similarly ascertained the one true mantra of our existence:
+                <br><br><strong>Ball is life.</strong>
+            </p>
         </div>
         <form action="" method="">
-            <p>Let's go.</p>
-            <div class="input-container">
-                <div class="line">
-                    <p>
-                        <label for="first-name">First name</label>
-                        <input type="text" name="first-name" id="first-name">
-                    </p>
-                    <p>
-                        <label for="last-name">Last name</label>
-                        <input type="text" name="last-name" id="last-name">
-                    </p>
-                </div>
-                <div class="line">
-                    <p>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </p>
-                    <p>
-                        <label for="number">Phone number</label>
-                        <input type="tel" name="number" id="number">
-                    </p>
-                </div>
-                <div class="line">
-                    <p>
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
-                    </p>
-                    <p>
-                        <label for="password-confirm">Confirm password</label>
-                        <input type="password" name="password-confirm" id="password-confirm">
-                    </p>
+            <div class="white-bg-container">
+                <p>Let's go.</p>
+                <div class="input-container">
+                    <div class="line">
+                        <p>
+                            <label for="first-name">First name*</label>
+                            <input type="text" name="first-name" id="first-name" required>
+                            <span></span>
+                        </p>
+                        <p>
+                            <label for="last-name">Last name*</label>
+                            <input type="text" name="last-name" id="last-name" required>
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="line">
+                        <p>
+                            <label for="email">Email*</label>
+                            <input type="email" name="email" id="email" required>
+                            <span></span>
+                        </p>
+                        <p>
+                            <label for="number">Phone number</label>
+                            <input
+                                type="tel"
+                                name="number"
+                                id="number"
+                                pattern="\d{10}|\d{3}[\-. ]\d{3}[\-. ]\d{4}">
+                                <span></span>
+                        </p>
+                    </div>
+                    <div class="line">
+                        <p>
+                            <label for="password">Password*</label>
+                            <input type="password" name="password" id="password" minlength="10" required>
+                            <span></span>
+                        </p>
+                        <p>
+                            <label for="password-confirm">Confirm password*</label>
+                            <input type="password" name="password-confirm" id="password-confirm" minlength="10" required>
+                            <span></span>
+                        </p>
+                    </div>
                 </div>
             </div>
             <button type="submit">Create Account</button>
         </form>
-        <p>Already have an account? <a href="">Log in.</a></p>
+        <p>Already have an account? <a href="">Log in</a></p>
     </div>
 </body>
 </html>
