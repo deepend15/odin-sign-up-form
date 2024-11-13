@@ -179,6 +179,14 @@ input[id="password"]:focus + span::after {
     top: 3px;
 }
 
+input[id="password"]:user-invalid + span::after {
+    position: absolute;
+    font-size: 0.7rem;
+    content: "Must be at least 10 characters";
+    top: 3px;
+    color: red;
+}
+
 input[id="password-confirm"]:user-invalid + span::after {
     position: absolute;
     font-size: 0.7rem;
