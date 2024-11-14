@@ -156,10 +156,19 @@ input:user-invalid {
     outline: 1px solid red;
 }
 
-input:user-invalid + span::before {
+input:not([name="password-confirm"]):user-invalid + span::before {
     position: absolute;
     font-size: 0.7rem;
     content: "invalid";
+    color: red;
+    top: -20px;
+    right: 10px;
+}
+
+input[type="text"]:user-invalid + span::before {
+    position: absolute;
+    font-size: 0.7rem;
+    content: "required";
     color: red;
     top: -20px;
     right: 10px;
